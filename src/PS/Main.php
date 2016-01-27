@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener {
     }
 
 	public function onLoad(){
-		$this->getLogger()->info("SpazzyTp §aenabled");
+		$this->getLogger()->info("PS §aenabled");
 	}
 
     public function onHit(EntityDamageEvent $event){
@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener {
      }
 	
     public function onDisable(){
-        $this->getLogger()->info("SpazzyTp §cdisabled.");
+        $this->getLogger()->info("PS §cdisabled.");
         return true;
 	}
 }
