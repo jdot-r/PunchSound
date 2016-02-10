@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener {
 		$this->getLogger()->info("PS §aenabled");
 	}
 
-    public function onHit(EntityDamageEvent $event){
+    public function onDamage(EntityDamageByEntityEvent $event){
         $entity = $event->getEntity();
         $fizz = new AnvilBreakSound($entity);
         $entity->getLevel()->addSound($fizz);
